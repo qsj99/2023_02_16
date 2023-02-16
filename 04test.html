@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04test.html</title>
+    <style>
+        * {
+            font-size: 20pt;
+        }
+    </style>
+
+    <script>
+        function mypass() {
+            var kor = 0, eng = 0, hap = 0, avg = 0;
+            kor = 85; eng = 80;
+            hap = kor + eng;
+            avg = hap / 2;
+            document.getElementById('display').innerHTML = '<h3> 총점=' + hap + '</h3>'
+        }//end
+
+        function mytest() {
+            var su = 6, nmg = 0;
+            result = '';
+            //if-else 짝수/홀수
+            // s=6;
+            // nmg=su%2;
+            // if(nmg==0){result= su+ '짝수입니다.'}
+            // else{result= su + '홀수입니다.'}
+            // document.getElementById('display').innerHTML=result;
+
+            if (su % 2 == 0) { result = su + '짝수입니다.' }
+            else { result = su + '홀수입니다.' }
+            document.getElementById('display').innerHTML = result;
+
+        }//end
+
+        function mynumber() {
+            var num = 0, message = '';
+            num = -24;
+            if (num < 0) { message = num + '음수입니다.' }
+            else if (num == 0) { message = num + '제로입니다.' }
+            else if (num > 0) { message = num + '양수입니다. ' }
+            else { message = num + '숫자가 아닙니다.' }
+            document.getElementById('display').innerHTML = message;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="display">
+        <img src="./images/a2.png" width="100" height="60">
+        <img src="./images/a2.png" width="100" height="60">
+        <img src="./images/a2.png" width="100" height="60">
+    </div>
+    <h2> 04test.html </h2>
+    <button onclick="mypass()">점수확인</button>
+    <button onclick="mytest()">홀수 짝수 구별</button>
+    <button onclick="mynumber()">정수</button>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+0216(목)
+
+제어문 if, switch
+보조제어문 break, continue
+반복문 for, while
+반복문 사용 => 로또, 구구단, 1~10 
+
+var su=0;
+for(var a=1; a<11; a=a+1){
+  su=su+1;
+  if (a==6) {break;}
+  document.write(su+ ' ');
+}
+
+var num=7; //짝수인지 홀수인지 
+ if(num%2==0){짝수}
+ else{홀수}
+
+
+hap=kor+eng;  avg=hap/2;
+문제] 평균 70점부터 합격, 0~69 재시험 
+var hap=kor+eng;
+    avg=hap/2;
+
+if(avg>=70){document.write('축합격');}
+else{document.write('재시험');}
+
+var garde='F';
+문제1] 평균 90~100:A, 평균 80~89:B, 평균 70~79:C, 
+      평균 60~69: D, 평균 0~59: F,
+if(avg>=90){document.write('A');}
+else if(avg>=80) {document.write('B');}
+else if(avg>=70) {document.write('C');}
+else if(avg>=60) {document.write('D');}
+else {document.write('F');}
+
+
+
+
+ 
+
+
